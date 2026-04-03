@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EM Soluções | Agendamento Premium</title>
+<title>Agendamentos EM Soluções | Climatização</title>
 <style>
   :root {
     --primary-blue: #0099ff;
@@ -85,7 +85,7 @@
   <div class="header">
     <div class="logo-text"><span class="logo-e">E</span><span class="logo-m">M</span></div>
     <h1>SOLUÇÕES</h1>
-    <p>Climatização & Engenharia Térmica</p>
+    <p>Climatização & Engenharia</p>
   </div>
 
   <div id="etapa1">
@@ -111,28 +111,28 @@
       <h2>Especificações Técnicas</h2>
       <div style="display: flex; gap: 15px;">
         <div style="flex: 1;">
-          <label>Marca do Sistema:</label>
+          <label>Marca do sistema:</label>
           <input type="text" id="marca" placeholder="Daikin, LG, etc.">
         </div>
         <div style="flex: 1;">
           <label>Modelo / Tipo:</label>
           <select id="tipo">
-            <option>Split Inverter</option>
-            <option>VRF / VRV</option>
-            <option>Chiller</option>
-            <option>Piso Teto / Cassete</option>
+            <option>Split / Cassete / Piso teto / Janela</option>
+            <option>VRF / VRV / Central Dutado</option>
+            <option>Chiller / Self-Contained / Fancoil</option>
+            <option>Outros equipamentos</option>
           </select>
         </div>
       </div>
 
       <label>Serviço Desejado:</label>
       <select id="servico" onchange="verificarAnalise()">
-        <option value="Instalação">Instalação e Infraestrutura</option>
-        <option value="Manutenção Preventiva">Manutenção Preventiva (PMOC)</option>
-        <option value="Higienização">Higienização Técnica Química</option>
-        <option value="Análise técnica">Análise Técnica e Diagnóstico de Falhas</option>
+        <option value="Instalação">Instalação / Infraestrutura</option>
+        <option value="Higienização">Higienização / Manutenção Preventiva (PMOC)</option>
+        <option value="Manutenção">Reparos / Manutenção Corretiva</option>
+        <option value="Análise Técnica">Análise Técnica / Visita Técnica</option>
       </select>
-      <div id="avisoAnalise" class="hidden price-tag">Taxa de visita para diagnóstico especializado: R$ 150,00</div>
+      <div id="avisoAnalise" class="hidden price-tag"> Valor de análise para diagnóstico especializado: R$150,00</div>
     </section>
 
     <section>
@@ -145,8 +145,10 @@
         <div style="flex: 1;">
           <label>Horário:</label>
           <select id="hora">
-            <option>09:00</option><option>11:00</option>
-            <option>13:30</option><option>15:30</option>
+            <option>09:00</option><option>10:00</option>
+            <option>11:00</option><option>12:00</option>
+            <option>13:00</option><option>14:00</option>
+            <option>15:00</option><option>16:00</option>
           </select>
         </div>
       </div>
@@ -175,10 +177,10 @@
     </div>
 
     <div class="protocol-box">
-      <div class="protocol-item">✓ Proteção de Ambientes</div>
+      <div class="protocol-item">✓ Proteção e Organização de Ambiente</div>
       <div class="protocol-item">✓ Descarte Ecológico</div>
       <div class="protocol-item">✓ Normas ABNT/PMOC</div>
-      <div class="protocol-item">✓ Ferramental Aferido</div>
+      <div class="protocol-item">✓ Ferramental de Precisão</div>
     </div>
 
     <label>Você já realizou o envio do comprovante?</label>
@@ -192,7 +194,7 @@
   </div>
 
   <div class="footer-info">
-    <strong>EM Soluções | Climatização Profissional</strong><br>
+    <strong>EM Soluções | Climatização</strong><br>
     CNPJ: 65.063.813/0001-76<br>
     Avenida Aricanduva, 9254 - São Paulo, SP
     <div class="social-links">
@@ -261,7 +263,7 @@
       h: document.getElementById('hora').value
     };
 
-    const msg = `⭐ *NOVA SOLICITAÇÃO DE AGENDAMENTO PREMIUM*\n\n` +
+    const msg = `⭐ *NOVA SOLICITAÇÃO DE AGENDAMENTO*\n\n` +
                 `👤 *Cliente:* ${dados.n}\n` +
                 `📞 *Contato:* ${dados.t}\n` +
                 `📍 *Local:* ${dados.e}\n\n` +
